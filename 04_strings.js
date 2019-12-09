@@ -94,5 +94,8 @@ let phraseThree = 'He earns 5000 euro from salary per month, 10000 euro annual b
 let phraseArr = phraseThree.split(' ');
 console.log(phraseArr);
 
-let salarySum = +phraseArr[2] + +phraseArr[8] + +phraseArr[12];
+let salarySumMonth = (+phraseArr[2] + +phraseArr[12]) * 12;
+console.log(salarySumMonth);
+let salaryBonus = +phraseArr[8];
+let salarySum = +salarySumMonth + +salaryBonus;
 console.log(salarySum);
