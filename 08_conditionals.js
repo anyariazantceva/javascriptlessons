@@ -3,38 +3,38 @@ You are old enough to drive but if not 18 give feedback to wait for the years he
 Enter your age: 30
 You are old enough to drive.*/
 
-// let userAge = prompt('enter your age');
-// let defaultAge = 18;
+let userAge = prompt('enter your age');
+let defaultAge = 18;
 
-// if (userAge >= defaultAge) {
-//     console.log('You are old enough to drive');
-// } else {
-//     let diff = defaultAge - userAge;
-//     console.log(`You have to wait ${diff} years to drive`);
-// }
+if (userAge >= defaultAge) {
+    console.log('You are old enough to drive');
+} else {
+    let diff = defaultAge - userAge;
+    console.log(`You have to wait ${diff} years to drive`);
+}
 
 // /* 2. Compare the values of myAge and yourAge using if … else. Based on the comparison log to console who is older (me or you). Use prompt(“Enter your age:”) to get the age as input. Output:
 // Enter your age: 30
 // You are 5 years older than me. */
 
-// let myAge = 27;
-// let userNew = prompt('Enter your age please');
-// if (userAge < myAge) {
-//     let leftAge = myAge - userNew;
-//     console.log(`You are ${leftAge} younger than me`);
-// } else if (userNew === myAge) {
-//     console.log('You are exactly the same age as me');
-// } else {
-//     let leftAge = userNew - myAge;
-//     console.log(`You are ${leftAge} years older than me`);
-// }
+let myAge = 27;
+let userNew = prompt('Enter your age please');
+if (userAge < myAge) {
+    let leftAge = myAge - userNew;
+    console.log(`You are ${leftAge} younger than me`);
+} else if (userNew === myAge) {
+    console.log('You are exactly the same age as me');
+} else {
+    let leftAge = userNew - myAge;
+    console.log(`You are ${leftAge} years older than me`);
+}
 
 /* 3. If a is greater than b return a is greater than b else a is less than b. 
 Output: sh let a = 4; let b = 3; 4 is greater than 3 */
-// let a = prompt('Enter A number');
-// let b = prompt('Enter B number');
+let a = prompt('Enter A number');
+let b = prompt('Enter B number');
 
-// a > b ? console.log('A is greater than B') : console.log('A is less than B');
+a > b ? console.log('A is greater than B') : console.log('A is less than B');
 
 /* 4. Write a code which give grade students according to theirs scores:
 80-100, A
