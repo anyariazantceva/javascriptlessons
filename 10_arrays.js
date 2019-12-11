@@ -105,4 +105,3 @@ itCompanies.splice(0, itCompanies.length);
 console.log(itCompanies);
 
 
-
