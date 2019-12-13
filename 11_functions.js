@@ -278,3 +278,5 @@ function capitalizedArray (arr) {
 }
 
 console.log(capitalizedArray(['Apple', 'Ball', 'Lesson', 'Anything']));
+
+
