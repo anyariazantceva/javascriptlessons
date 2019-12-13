@@ -287,5 +287,63 @@ function isPrime (n) {
 console.log(isPrime(5));
 
 // 48. Write a functions which checks if all items are unique in the array.
+function checkUnique (arr) {
+ let uniqueArr = Array.from(new Set(arr));
+ return uniqueArr;
+}
 
+console.log(checkUnique([2, 4, 5, 2, 1, 10, 8, 1]));
 
+// 49. Write a function which checks if all the items of the array are the same data type.
+
+const checkSameData = (arr) => {
+    let typeData = typeof arr[0];
+    for (let i = 0; i < arr.length; i++) {
+        if(typeData !== typeof arr[i]) {
+            return 'Not all are the same'
+        } else {
+            return 'All are the same'
+        }
+    }
+};
+
+console.log(checkSameData(['A', 2, true, 48, 7, 45]));
+
+// 50. Write a function which checks if all the items of the array are the same data type.
+
+function allSameType( arr ) {
+    return new Set( arr.map( x => typeof x ) ).size <= 1;
+}
+
+console.log(allSameType([1, true, 5, 'foo']));
+
+// 51. JavaScript variable name does not support special characters or symbols except $ or _.
+// Write a function *isValidVariable which check if a variable is valid or invalid variable.
+
+function isValidVariable (v) {
+    if(v.indexOf('$') > -1 || v.indexOf('_') > -1) {
+        return 'Is not valid variable';
+    } else {
+        return 'Is valid';
+    }
+}
+
+console.log(isValidVariable('add'));
+
+// 52. Write a function which returns array of seven random numbers in a range of 0-9. All the numbers must be unique.
+function randomNumbers () {
+    let arr = [];
+    for(let i = 0; i < 7; i++) {
+        arr.push(Math.floor(Math.random * 9));
+    }
+
+    let newArr = Array.from(new Set(arr));
+    if(newArr.length === 7) {
+        return newArr
+    } else {
+        for(let i = 0; i < 7 - newArr.length; i++) {
+            newArr.push(Math.floor(Math.random * 9));
+        }
+        return newArr
+    }
+}
