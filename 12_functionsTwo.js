@@ -298,16 +298,25 @@ console.log(checkUnique([2, 4, 5, 2, 1, 10, 8, 1]));
 
 const checkSameData = (arr) => {
     let typeData = typeof arr[0];
+    let same = 0;
+    let notSame = 0;
+
     for (let i = 0; i < arr.length; i++) {
-        if(typeData !== typeof arr[i]) {
-            return 'Not all are the same'
+        if(typeData === typeof arr[i]) {
+            same++
         } else {
-            return 'All are the same'
+            notSame++
         }
+    }
+
+    if(notSame > 0) {
+        return 'Not the same'
+    } else {
+        return 'All the same'
     }
 };
 
-console.log(checkSameData(['A', 2, true, 48, 7, 45]));
+console.log(checkSameData(['A', ['2', 9, 10], true, 48, 7, 45]));
 
 // 50. Write a function which checks if all the items of the array are the same data type.
 
